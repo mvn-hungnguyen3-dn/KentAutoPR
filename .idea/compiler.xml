@@ -6,8 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="KentAutoPR" />
+        <module name="KT" />
+        <module name="Core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="KENT" target="1.8" />
+      <module name="KentPR" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
