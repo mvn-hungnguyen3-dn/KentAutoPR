@@ -1,7 +1,7 @@
 package stepdefs
 
 import kent.base.BaseDefinitions
-import mlvn.core.PageFactory
+import kent.core.PageFactory
 import org.testng.Assert
 import pages.DemoPage
 

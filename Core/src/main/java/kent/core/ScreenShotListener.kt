@@ -1,6 +1,5 @@
-package mlvn.core
+package kent.core
 
-import kent.core.Controller
 import org.apache.commons.io.FileUtils
 import org.openqa.selenium.OutputType
 import org.openqa.selenium.TakesScreenshot
@@ -15,9 +14,6 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-/**
- * @author tien.hoang
- */
 class ScreenShotListener : TestListenerAdapter() {
 
     override fun onTestFailure(result: ITestResult) {

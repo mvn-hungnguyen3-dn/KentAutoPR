@@ -1,4 +1,4 @@
-package mlvn.core
+package kent.core
 
 import org.openqa.selenium.remote.RemoteWebDriver
 import org.testng.ITestContext
@@ -6,9 +6,6 @@ import org.testng.TestListenerAdapter
 import java.io.*
 import java.util.*
 
-/**
- * @author tien.hoang
- */
 class PropertyListener : TestListenerAdapter() {
 
     override fun onStart(iTestContext: ITestContext) {

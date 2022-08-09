@@ -1,9 +1,6 @@
 package kent.core
 
 import io.cucumber.testng.AbstractTestNGCucumberTests
-import mlvn.core.PropertyListener
-import mlvn.core.ReportListener
-import mlvn.core.ScreenShotListener
 import org.testng.ITestContext
 import org.testng.annotations.AfterClass
 import org.testng.annotations.BeforeClass

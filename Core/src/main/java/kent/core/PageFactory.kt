@@ -1,12 +1,8 @@
-package mlvn.core
+package kent.core
 
 import io.appium.java_client.android.AndroidDriver
 import io.appium.java_client.ios.IOSDriver
-import kent.core.Controller
 
-/**
- * @author tien.hoang
- */
 class PageFactory<T>(private val clazz: Class<T>) {
 
     fun create(): T? {

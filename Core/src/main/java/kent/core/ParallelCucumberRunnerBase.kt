@@ -1,9 +1,6 @@
 package kent.core
 
-import mlvn.core.PropertyListener
-import mlvn.core.ReportListener
-import mlvn.core.ScreenShotListener
-import mlvn.core.selenium.CustomAbstractTestNGCucumberTests
+import kent.core.selenium.CustomAbstractTestNGCucumberTests
 import org.testng.ITestContext
 import org.testng.annotations.AfterClass
 import org.testng.annotations.BeforeClass

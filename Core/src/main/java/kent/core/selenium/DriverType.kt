@@ -1,4 +1,4 @@
-package mlvn.core.selenium
+package kent.core.selenium
 
 import io.github.bonigarcia.wdm.WebDriverManager
 import org.openqa.selenium.chrome.ChromeDriver

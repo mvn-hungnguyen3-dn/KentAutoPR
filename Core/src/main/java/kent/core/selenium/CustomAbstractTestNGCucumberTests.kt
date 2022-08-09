@@ -1,4 +1,4 @@
-package mlvn.core.selenium
+package kent.core.selenium
 
 import io.cucumber.testng.FeatureWrapper
 import io.cucumber.testng.PickleWrapper

@@ -1,6 +1,6 @@
 @file:Suppress("NULLABILITY_MISMATCH_BASED_ON_JAVA_ANNOTATIONS")
 
-package mlvn.core
+package kent.core
 
 import org.apache.commons.lang3.time.DurationFormatUtils
 import org.json.simple.JSONArray

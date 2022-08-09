@@ -1,4 +1,4 @@
-package mlvn.core.selenium
+package kent.core.selenium
 
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.openqa.selenium.remote.RemoteWebDriver

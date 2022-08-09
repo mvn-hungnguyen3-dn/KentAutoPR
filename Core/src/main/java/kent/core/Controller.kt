@@ -11,7 +11,7 @@ import mlvn.core.selenium.Browser.BROWSER_FIREFOX
 import mlvn.core.selenium.Browser.BROWSER_IE
 import mlvn.core.selenium.Browser.BROWSER_OPERA
 import mlvn.core.selenium.Browser.BROWSER_SAFARI
-import mlvn.core.selenium.DriverType
+import kent.core.selenium.DriverType
 import org.openqa.selenium.Proxy
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.chrome.ChromeOptions
