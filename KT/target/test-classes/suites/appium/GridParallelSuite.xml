@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Main Suite" verbose="1" parallel="tests" thread-count="2">
+    <parameter name="server" value="http://hub:4444/wd/hub"/>
+
+    <test name="Ios Test" enabled="true">
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="automationName" value="XCUITest"/>
+        <parameter name="deviceName" value=""/>
+        <parameter name="udid" value=""/>
+        <parameter name="platformVersion" value=""/>
+        <parameter name="app" value="/appfile/.ipa"/>
+        <parameter name="noReset" value="true"/>
+        <classes>
+            <class name="testrunner.appium.ParallelTestRunner"/>
+        </classes>
+    </test>
+    <test name="Android Test" enabled="true">
+        <parameter name="platformName" value="android"/>
+        <parameter name="automationName" value="UiAutomator2"/>
+        <parameter name="deviceName" value="Samsung SM-G985F/DS"/>
+        <parameter name="platformVersion" value="10"/>
+        <parameter name="appWaitDuration" value="30000"/>
+        <parameter name="udid" value="R58N22PKRQV"/>
+        <parameter name="appActivity" value=""/>
+        <parameter name="appPackage" value=""/>
+        <parameter name="app" value="/appfile/.apk"/>
+        <parameter name="noReset" value="true"/>
+        <classes>
+            <class name="testrunner.appium.ParallelTestRunner"/>
+        </classes>
+    </test>
+</suite>
