@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Android Test Suite" verbose="1" parallel="methods" data-provider-thread-count="1">
+    <parameter name="server" value="http://118.69.61.190:4444/wd/hub"/>
+    <test name="Android Test" enabled="true">
+        <parameter name="platformName" value="android"/>
+        <parameter name="automationName" value="UiAutomator2"/>
+        <parameter name="deviceName" value="Pixel 4 XL"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="appWaitDuration" value="30000"/>
+        <parameter name="udid" value="99181FFBA007EH"/>
+        <parameter name="browserName" value="chrome"/>
+        <classes>
+            <class name="testrunner.CMPlusWebTestRunner"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Ios Test Suite" verbose="1" parallel="methods" data-provider-thread-count="1">
+    <parameter name="server" value="http://118.69.61.190:4444/wd/hub"/>
+    <test name="Ios Test" enabled="true">
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="automationName" value="XCUITest"/>
+        <parameter name="deviceName" value="iPhone 11 Pro"/>
+        <parameter name="udid" value="00008030-001951692220402E"/>
+        <parameter name="platformVersion" value="15.4"/>
+        <parameter name="appWaitDuration" value="30000"/>
+        <!-- chrome, firefox, opera, edge, safari-->
+        <parameter name="browserName" value="safari"/>
+
+        <classes>
+            <class name="testrunner.CMPlusWebTestRunner"/>
+        </classes>
+    </test>
+</suite>

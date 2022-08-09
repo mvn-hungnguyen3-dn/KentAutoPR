@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="methods" data-provider-thread-count="5">
+    <test name="Chrome Test">
+        <parameter name="browserName" value="chrome"/>
+        <!-- chrome, firefox, opera, edge, safari-->
+        <parameter name="headless" value="true"/>
+        <parameter name="server" value="http://172.16.110.169:4445"/>
+        <classes>
+            <class name="testrunner.selenium.SmokeTestRunner"/>
+        </classes>
+    </test>
+    <test name="Chrome firefox">
+        <parameter name="browserName" value="firefox"/>
+        <!-- chrome, firefox, opera, edge, safari-->
+        <parameter name="headless" value="true"/>
+        <parameter name="server" value="http://172.16.110.169:4445"/>
+        <classes>
+            <class name="testrunner.selenium.SmokeTestRunner"/>
+        </classes>
+    </test>
+    <test name="Chrome opera">
+        <parameter name="browserName" value="opera"/>
+        <!-- chrome, firefox, opera, edge, safari-->
+        <parameter name="headless" value="true"/>
+        <parameter name="server" value="http://172.16.110.169:4445"/>
+        <classes>
+            <class name="testrunner.selenium.SmokeTestRunner"/>
+        </classes>
+    </test>
+    <test name="Chrome edge">
+        <parameter name="browserName" value="edge"/>
+        <!-- chrome, firefox, opera, edge, safari-->
+        <parameter name="headless" value="true"/>
+        <parameter name="server" value="http://172.16.110.169:4445"/>
+        <classes>
+            <class name="testrunner.selenium.SmokeTestRunner"/>
+        </classes>
+    </test>
+</suite>
