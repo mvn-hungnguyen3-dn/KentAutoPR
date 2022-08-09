@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Android Test Suite" verbose="1">
+    <parameter name="server" value="http://127.0.0.1:4723/wd/hub"/>
+    <test name="Android Test" enabled="true">
+        <parameter name="platformName" value="android"/>
+        <parameter name="automationName" value="UiAutomator2"/>
+        <parameter name="deviceName" value="Galaxy S7"/>
+        <parameter name="platformVersion" value="8.0.0"/>
+        <parameter name="appWaitDuration" value="30000"/>
+        <parameter name="appActivity" value=""/>
+        <parameter name="appPackage" value=""/>
+        <parameter name="app" value="/appfile/android/.apk"/>
+        <parameter name="noReset" value="true"/>
+        <classes>
+            <class name="testrunner.appium.TestRunner"/>
+        </classes>
+    </test>
+</suite>
