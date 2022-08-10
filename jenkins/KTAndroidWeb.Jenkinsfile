@@ -1,4 +1,4 @@
-def APP_MODULE = "App"
+def APP_MODULE = "KT"
 def SUITE_NAME = "appium/AndroidWebSuite"
 def notify = evaluate readTrusted('notify.groovy')
 def classification = evaluate readTrusted('classification.groovy')
