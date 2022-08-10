@@ -3,7 +3,7 @@ def SUITE_NAME = "selenium/ChromeSuite"
 def notify = evaluate readTrusted('notify.groovy')
 def classification = evaluate readTrusted('classification.groovy')
 pipeline {
-    agent any
+    agent none
 
     stages {
         stage('Run cucumber') {
