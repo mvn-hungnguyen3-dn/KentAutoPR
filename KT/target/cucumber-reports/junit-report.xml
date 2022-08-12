@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.272">
-<testcase classname="Check Demo screen" name="Check Demo Page screen" time="3.555">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.308">
+<testcase classname="Check Demo screen" name="Check Demo Page screen" time="3.661">
 <system-out><![CDATA[When Open Demo Page screen..................................................passed
 Then Move to Demo page screen successfully..................................passed
 ]]></system-out>
