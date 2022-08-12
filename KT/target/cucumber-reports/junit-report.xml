@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.28">
-<testcase classname="Check Demo screen" name="Check Demo Page screen" time="12.956">
-<system-out><![CDATA[When Open Demo Page screen..................................................passed
-Then Move to Demo page screen successfully..................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.782">
+<testcase classname="Check Demo screen" name="Check Demo Page screen" time="1.851">
+<failure message="Demo Page is not displayed expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When Open Demo Page screen..................................................passed
+Then Move to Demo page screen successfully..................................failed
+
+StackTrace:
+java.lang.AssertionError: Demo Page is not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at stepdefs.DemoDefinitions._init_$lambda-1(DemoDefinitions.kt:18)
+	at ✽.Move to Demo page screen successfully(file:///Users/hung.nguyen3/AutoAppium/IdeaProjects/KentAutoPR/KT/src/test/resources/features/DemoTest.feature:6)
+]]></failure>
 </testcase>
 </testsuite>

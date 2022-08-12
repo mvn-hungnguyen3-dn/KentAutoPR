@@ -1,6 +1,5 @@
 package kent.core
 
-import com.sun.org.apache.bcel.internal.Const
 import io.appium.java_client.AppiumDriver
 import io.appium.java_client.MobileElement
 import io.appium.java_client.android.AndroidDriver
@@ -9,7 +8,6 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType
 import io.appium.java_client.remote.IOSMobileCapabilityType
 import io.appium.java_client.remote.MobileCapabilityType
 import kent.base.Constant
-import kent.base.Constant.TIME_OUT_MIN_ELEMENT
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.remote.DesiredCapabilities
 import org.testng.xml.XmlTest

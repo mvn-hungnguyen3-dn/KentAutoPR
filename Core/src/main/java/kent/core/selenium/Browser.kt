@@ -1,4 +1,4 @@
-package mlvn.core.selenium
+package kent.core.selenium
 
 object Browser {
     const val BROWSER_CHROME = "chrome"

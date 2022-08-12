@@ -1,15 +1,15 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "87bea446-16d1-4004-b8c4-8429971cf3a5",
+    "id": "7d576191-694f-4fd9-afc8-62440e71f231",
     "feature": "Check Demo screen",
     "scenario": "Check Demo Page screen",
-    "start": 1660298427173,
+    "start": 1660299157216,
     "group": 16,
     "content": "",
     "tags": "@demotest,",
-    "end": 1660298440129,
-    "className": "passed"
+    "end": 1660299159067,
+    "className": "failed"
   }
 ]);
 CucumberHTML.timelineGroups.pushArray([

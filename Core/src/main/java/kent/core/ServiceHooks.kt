@@ -2,9 +2,6 @@ package kent.core
 
 import org.junit.Before
 
-/**
- * @author tien.hoang
- */
 class ServiceHooks {
     @Before
     fun initializeTest() {

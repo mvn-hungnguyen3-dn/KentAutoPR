@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.422 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.685 s <<< FAILURE! - in TestSuite
+testrunner.CMPlusWebTestRunner.runScenario["Check Demo Page screen", "Optional[Check Demo screen]"](1)  Time elapsed: 6.775 s  <<< FAILURE!
+java.lang.AssertionError: Demo Page is not displayed expected [true] but found [false]
+

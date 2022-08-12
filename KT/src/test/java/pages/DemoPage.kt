@@ -19,7 +19,7 @@ class DemoPage : BasePage<DemoPage>() {
     }
 
     override fun isPageDisplayed(): Boolean {
-        return isForElementPresent(searchBar)
+        return false
     }
 
     override fun waitForPageDisplayed(): DemoPage {
