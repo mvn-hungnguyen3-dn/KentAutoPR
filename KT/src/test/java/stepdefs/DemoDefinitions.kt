@@ -14,6 +14,7 @@ class DemoDefinitions : BaseDefinitions() {
             demoPage?.open()
         }
         Then("Move to Demo page screen successfully") {
+            println("Test Jenkin success")
             demoPage?.waitForPageDisplayed()
             Assert.assertTrue(demoPage?.isPageDisplayed() ?: false, "Demo Page is not displayed")
         }

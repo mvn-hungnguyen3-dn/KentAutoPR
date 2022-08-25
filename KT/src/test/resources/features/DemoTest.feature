@@ -1,4 +1,4 @@
-@DemoTest
+@JenkinTest
 Feature: Check Demo screen
 
   Scenario: Check Demo Page screen
