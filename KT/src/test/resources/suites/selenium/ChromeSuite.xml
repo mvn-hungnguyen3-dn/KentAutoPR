@@ -4,7 +4,7 @@
     <test name="Chrome Test">
         <parameter name="browserName" value="chrome"/>
         <parameter name="headless" value="false"/>
-        <parameter name="server" value="http://118.69.61.190:4445"/>
+<!--        <parameter name="server" value="http://118.69.61.190:4445"/>-->
         <classes>
             <class name="testrunner.CMPlusWebTestRunner"/>
         </classes>

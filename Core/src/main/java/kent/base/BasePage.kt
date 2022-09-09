@@ -5,7 +5,6 @@ import io.appium.java_client.android.AndroidDriver
 import io.appium.java_client.ios.IOSDriver
 import io.appium.java_client.touch.WaitOptions
 import io.appium.java_client.touch.offset.PointOption
-import kent.api.ApiDrive
 import kent.api.GmailApi
 import kent.core.Controller
 import org.openqa.selenium.*
@@ -85,19 +84,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Delete row in sheet */
-    fun deleteFirstRowFromDataSheet(sheetID: Int?) {
-        val apiDrive = ApiDrive()
-        apiDrive.serviceSheet
-        apiDrive.deleteFirstRowFromDataSheet(sheetID)
-    }
-
-    fun deleteSecondRowFromDataSheet(sheetID: Int?) {
-        val apiDrive = ApiDrive()
-        apiDrive.serviceSheet
-        apiDrive.deleteSecondRowFromDataSupporterSheet(sheetID)
-    }
-
     /**  Wait for element displayed with timeout */
     fun waitForElementDisplay(element: MobileElement?, timeOutInSecond: Int) {
         try {
@@ -150,7 +136,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Wait for element hide without timeout */
     fun waitForElementHide(element: MobileElement?) {
         try {
             WebDriverWait(driver, Constant.TIME_OUT_NORMAL_ELEMENT.toLong()).until { !isElementDisplayed(element)!! }
@@ -167,7 +152,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Wait for page displayed */
     fun waitForPageDisplayed(element: MobileElement?): BasePage<*> {
         try {
             WebDriverWait(driver, Constant.TIME_OUT_NORMAL_ELEMENT.toLong()).until { isElementDisplayed(element) }
@@ -177,8 +161,7 @@ abstract class BasePage<T> {
         return this
     }
 
-    /** Check for screen is displayed */
-    fun isForElementPresent(element: MobileElement?): Boolean {
+    private fun isForElementPresent(element: MobileElement?): Boolean {
         return isElementDisplayed(element, Constant.TIME_OUT_MIN_ELEMENT)
     }
 
@@ -191,7 +174,6 @@ abstract class BasePage<T> {
         js.executeScript("window.scrollBy(0,document.body.scrollHeight)")
     }
 
-    /** Wait for list of element displayed */
     fun waitForListElementDisplay(elements: List<MobileElement>?) {
         try {
             WebDriverWait(driver, Constant.TIME_OUT_NORMAL_ELEMENT.toLong()).until { isListElementDisplayed(elements) }
@@ -199,7 +181,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Check if list of element displayed */
     private fun isListElementDisplayed(elements: List<MobileElement>?): Boolean? {
         return try {
             elements?.isNotEmpty()
@@ -209,12 +190,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /**
-     * Wait for element displayed with scroll action then click without timeout
-     *
-     * @param elementTextDisplay
-     * @param element
-     */
     fun scrollToElementContainText(elementTextDisplay: String, element: MobileElement) {
         try {
             WebDriverWait(
@@ -304,7 +279,6 @@ abstract class BasePage<T> {
         return this
     }
 
-    /** Click back button */
     open fun clickBackButton(): BasePage<*> {
         return this
     }
@@ -318,8 +292,7 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Scroll to see elements */
-    fun scrollToView(): BasePage<*> {
+    private fun scrollToView(): BasePage<*> {
         try {
             driver?.let {
                 val dimensions = it.manage().window().size
@@ -335,7 +308,6 @@ abstract class BasePage<T> {
         return this
     }
 
-    /** Click notification alerts */
     fun clickNotification(by: By?): BasePage<*> {
         try {
             WebDriverWait(
@@ -380,7 +352,6 @@ abstract class BasePage<T> {
         return this
     }
 
-    /** Check element displayed for pages */
     fun waitToCallApiSuccess(apiStatus: Boolean) {
         val wait = WebDriverWait(driver, Constant.TIME_OUT_NORMAL_ELEMENT.toLong())
         try {
@@ -390,7 +361,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Check get gmail success */
     fun waitToCallGmailApiSuccess(apiStatus: Boolean) {
         val wait = WebDriverWait(driver, Constant.TIME_OUT_NORMAL_ELEMENT.toLong())
         try {
@@ -400,7 +370,6 @@ abstract class BasePage<T> {
         }
     }
 
-    /** Check element displayed for pages */
     private fun isElementDisplayed(element: MobileElement?, timeOutInSecond: Int): Boolean {
         var isVisible = false
         val wait = WebDriverWait(driver, timeOutInSecond.toLong())
@@ -451,14 +420,7 @@ abstract class BasePage<T> {
         private const val OFFSET_LEFT2 = 0.70
         private var passCode: String? = null
         private var takeOverID: String? = null
-        var isGetPassCodeSuccess = false
-        var isGetTakeOverIDSuccess = false
 
-        /**
-         * Get Mobile driver
-         *
-         * @return mobile driver
-         */
         private fun getScrollStartAndEndElements(driver: AppiumDriver<*>): HashMap<String, Int> {
             val dimensions: Dimension = driver.manage().window().size
             val screenHeightStart = dimensions.getHeight() * 0.5

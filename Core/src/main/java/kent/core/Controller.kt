@@ -256,31 +256,6 @@ class Controller {
         return null
     }
 
-    private fun defaultAndroidAppParameters(): Map<String, String> {
-        val parameters: MutableMap<String, String> = HashMap()
-        parameters[MobileCapabilityType.PLATFORM_NAME] = "android"
-        parameters[MobileCapabilityType.DEVICE_NAME] = "Galaxy S7"
-        parameters[MobileCapabilityType.PLATFORM_VERSION] = "8.0.0"
-        parameters[MobileCapabilityType.AUTOMATION_NAME] = "UiAutomator2"
-        parameters[AndroidMobileCapabilityType.APP_PACKAGE] = "jp.co.lc.caloriemama.staging"
-        parameters[AndroidMobileCapabilityType.APP_ACTIVITY] = "jp.co.lc.platform.ui.splash.SplashActivity_"
-        parameters[MobileCapabilityType.APP] =
-            "/appfile/android/staging_jp.co.lc.caloriemama.staging.staging_v3.2.23.submit.apk"
-        parameters["server"] = "http://127.0.0.1:4723/wd/hub"
-        return parameters
-    }
-
-    private fun defaultIosAppParameters(): Map<String, String> {
-        val parameters: MutableMap<String, String> = HashMap()
-        parameters[MobileCapabilityType.PLATFORM_NAME] = "ios"
-        parameters[MobileCapabilityType.DEVICE_NAME] = "iPhone 11 Pro Max"
-        parameters[MobileCapabilityType.PLATFORM_VERSION] = "13.7"
-        parameters[MobileCapabilityType.AUTOMATION_NAME] = "XCUITest"
-        parameters[MobileCapabilityType.APP] = "/appfile/ios/staging_jp.co.lc.caloriemama.staging_v3.2.6.app"
-        parameters["server"] = "http://127.0.0.1:4723/wd/hub"
-        return parameters
-    }
-
     private fun defaultAndroidWebParameters(): Map<String, String> {
         val parameters: MutableMap<String, String> = HashMap()
         val capabilities = DesiredCapabilities()
