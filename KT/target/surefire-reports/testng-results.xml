@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite default" duration-ms="7852" started-at="2022-08-12T17:12:32 ICT" finished-at="2022-08-12T17:12:39 ICT">
+  <suite name="Suite default" duration-ms="10335" started-at="2022-09-09T14:08:24 ICT" finished-at="2022-09-09T14:08:35 ICT">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.CMPlusWebTestRunner@491cc5c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.CMPlusWebTestRunner@4d3167f4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Chrome Test" duration-ms="7852" started-at="2022-08-12T17:12:32 ICT" finished-at="2022-08-12T17:12:39 ICT">
+    <test name="Chrome Test" duration-ms="10335" started-at="2022-09-09T14:08:24 ICT" finished-at="2022-09-09T14:08:35 ICT">
       <class name="testrunner.CMPlusWebTestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.CMPlusWebTestRunner@491cc5c9]" name="setUpClass" is-config="true" duration-ms="557" started-at="2022-08-12T17:12:32 ICT" finished-at="2022-08-12T17:12:32 ICT">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testrunner.CMPlusWebTestRunner@4d3167f4]" name="setUpClass" is-config="true" duration-ms="514" started-at="2022-09-09T14:08:24 ICT" finished-at="2022-09-09T14:08:25 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.CMPlusWebTestRunner@491cc5c9]" name="setUpClass" is-config="true" duration-ms="111" started-at="2022-08-12T17:12:32 ICT" finished-at="2022-08-12T17:12:32 ICT">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testrunner.CMPlusWebTestRunner@4d3167f4]" name="setUpClass" is-config="true" duration-ms="75" started-at="2022-09-09T14:08:25 ICT" finished-at="2022-09-09T14:08:25 ICT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@59717824]]>
+                <![CDATA[org.testng.TestRunner@6b0c2d26]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.CMPlusWebTestRunner@491cc5c9]" name="runScenario" duration-ms="6239" started-at="2022-08-12T17:12:32 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-12T17:12:39 ICT">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testrunner.CMPlusWebTestRunner@4d3167f4]" name="runScenario" duration-ms="9365" started-at="2022-09-09T14:08:25 ICT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-09T14:08:34 ICT">
           <params>
             <param index="0">
               <value>
@@ -38,24 +38,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Demo Page is not displayed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Demo Page is not displayed expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at stepdefs.DemoDefinitions._init_$lambda-1(DemoDefinitions.kt:18)
-at ✽.Move to Demo page screen successfully(file:///Users/hung.nguyen3/AutoAppium/IdeaProjects/KentAutoPR/KT/src/test/resources/features/DemoTest.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.CMPlusWebTestRunner@491cc5c9]" name="tearDownClass" is-config="true" duration-ms="371" started-at="2022-08-12T17:12:39 ICT" finished-at="2022-08-12T17:12:39 ICT">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testrunner.CMPlusWebTestRunner@4d3167f4]" name="tearDownClass" is-config="true" duration-ms="320" started-at="2022-09-09T14:08:34 ICT" finished-at="2022-09-09T14:08:35 ICT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
