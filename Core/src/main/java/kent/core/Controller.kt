@@ -219,8 +219,8 @@ class Controller {
             workSpace = System.getProperty("workSpace")
         } else {
             workSpace = System.getProperty("user.dir")
-            if (workSpace.contains("/App")) {
-                workSpace = workSpace.replace("/App", "")
+            if (workSpace.contains("/KT")) {
+                workSpace = workSpace.replace("/KT", "")
             }
         }
         val capabilities = DesiredCapabilities()
